@@ -55,7 +55,7 @@ public class Farm {
         System.out.println("All aviaries was cleaned");
     }
 
-    private void puppiesGoToTrainingGround() {
+    private void takePuppiesToTrainingGround() {
         trainingGround.setPuppies(new ArrayList<>());
         for (Aviary aviary : aviaries) {
             if (aviary.getDog().getAge() < 3) {
@@ -67,7 +67,7 @@ public class Farm {
         System.out.println("All puppies was trained");
     }
 
-    private void adultGoToWork() {
+    private void takeAdultDogsToWork() {
         workPlace.setAdultDogs(new ArrayList<>());
         for (Aviary aviary : aviaries) {
             if (aviary.getDog().isTrained()) {
@@ -85,8 +85,8 @@ public class Farm {
         feedAllDogs();
         cureAllDogs();
         clearAllAviaries();
-        puppiesGoToTrainingGround();
-        adultGoToWork();
+        takePuppiesToTrainingGround();
+        takeAdultDogsToWork();
         feedAllDogs();
     }
 }
