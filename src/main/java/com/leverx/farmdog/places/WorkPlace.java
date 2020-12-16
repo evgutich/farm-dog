@@ -1,8 +1,8 @@
 package com.leverx.farmdog.places;
 
-import com.leverx.farmdog.staff.impl.DefaultServiceStaff;
 import com.leverx.farmdog.animals.Dog;
 import com.leverx.farmdog.staff.ServiceStaff;
+import com.leverx.farmdog.staff.impl.DefaultServiceStaff;
 
 import java.util.List;
 

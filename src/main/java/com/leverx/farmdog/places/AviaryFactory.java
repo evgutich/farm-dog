@@ -1,7 +1,5 @@
 package com.leverx.farmdog.places;
 
-import com.leverx.farmdog.places.Aviary;
-
 import java.util.Random;
 
 public class AviaryFactory {
