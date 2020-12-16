@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface AviaryService {
 
-    void createSomeAviaries(int count, List<Aviary> aviaries);
+    List<Aviary> createSomeAviaries();
 
     void addDogsToAviaries(List<Aviary> aviaries);
 

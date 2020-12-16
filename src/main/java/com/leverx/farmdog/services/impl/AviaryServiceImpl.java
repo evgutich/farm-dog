@@ -7,19 +7,24 @@ import com.leverx.farmdog.services.AviaryService;
 import com.leverx.farmdog.staff.ServiceStaff;
 import com.leverx.farmdog.staff.impl.DefaultServiceStaff;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AviaryServiceImpl implements AviaryService {
+
+    private final int AVIARIES_COUNT = 3;
 
     private final AviaryFactory aviaryFactory = new AviaryFactory();
     private final DogFactory dogFactory = new DogFactory();
     private final ServiceStaff serviceStaff = new DefaultServiceStaff();
 
     @Override
-    public void createSomeAviaries(int count, List<Aviary> aviaries) {
-        for (int i = 0; i < count; i++) {
+    public List<Aviary> createSomeAviaries() {
+        List<Aviary> aviaries = new ArrayList<>();
+        for (int i = 0; i < AVIARIES_COUNT; i++) {
             aviaries.add(aviaryFactory.createRandomEmptyAviary());
         }
+        return aviaries;
     }
 
     @Override
